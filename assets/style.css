@@ -5,6 +5,7 @@ body {
 * {
   font-family: "Inter";
   font-style: normal;
+  font-display: swap;
 }
 .top-header {
   background-color: white;
@@ -65,6 +66,7 @@ body {
   flex: 1;
   margin: 0 20px;
   z-index: 0;
+  max-width: 560px;
 }
 
 .picture img {
@@ -80,6 +82,7 @@ body {
 }
 .about-me__introduction {
   font-family: "Spectral";
+  font-display: swap;
   font-weight: 800;
   font-style: italic;
   font-size: 16px;
@@ -92,6 +95,10 @@ body {
 .title {
   text-align: center;
   padding-block: 2em;
+}
+
+#gallery {
+  max-width: 1296px;
 }
 .gallery .nav {
   justify-content: center;
@@ -135,6 +142,7 @@ body {
 
 .quote {
   font-family: "Spectral";
+  font-display: swap;
   font-style: italic;
   width: 70%;
   margin: auto;
@@ -142,12 +150,14 @@ body {
 }
 .quote__text {
   font-family: Spectral;
+  font-display: swap;
   font-style: italic;
   font-weight: 300;
   font-size: 2.5em;
 }
 .quote__author {
   font-family: Spectral;
+  font-display: swap;
   font-weight: 800;
   font-size: 22px;
 }
@@ -243,6 +253,9 @@ input[type="submit"] {
   .picture {
     flex: 2;
   }
+  .picture img {
+    max-width: 470px;
+  }
   #about,
   #contact .container {
     align-items: center;
@@ -255,6 +268,10 @@ input[type="submit"] {
   #about-me p {
     width: 100%;
   }
+
+  #gallery {
+    max-width: 936px;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -263,6 +280,9 @@ input[type="submit"] {
   }
   .picture {
     width: 50%;
+  }
+  .picture img {
+    max-width: 400px;
   }
   .picture.left::before {
     width: 100%;
@@ -345,10 +365,16 @@ input[type="submit"] {
     padding-inline: 2em;
     padding-block: 2em;
   }
+  #gallery {
+    max-width: 516px;
+  }
   form {
     width: 100%;
   }
   .picture {
     width: 80%;
+  }
+  .picture img {
+    max-width: 469px;
   }
 }

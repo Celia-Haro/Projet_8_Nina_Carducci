@@ -43,6 +43,11 @@ body {
   width: 20px;
 }
 
+main {
+  max-width: 1920px;
+  justify-content: center;
+}
+
 #about {
   display: flex;
   background-color: #f6d2b8;
@@ -99,6 +104,7 @@ body {
 
 #gallery {
   max-width: 1296px;
+  margin: auto;
 }
 .gallery .nav {
   justify-content: center;
